@@ -13,7 +13,6 @@ import { faThumbtack, faUser } from '@fortawesome/free-solid-svg-icons'
 function Menu() {
   return (
     <>
-      <br />
       <Navbar fixed="top" bg="white" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
@@ -24,7 +23,7 @@ function Menu() {
               height="50"
               className="d-inline-block align-top"
             />{' '}
-            CasaMundi
+            CasaMundi HOLA
           </Navbar.Brand>
           <ul className='menu'>
             <li className='anunciate'><a> <FontAwesomeIcon icon={faThumbtack} style={{ color: "#7a7a7a", }} /><span>Pon tu anuncio gratis</span></a></li>
