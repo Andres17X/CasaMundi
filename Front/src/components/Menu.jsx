@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbtack, faUser } from '@fortawesome/free-solid-svg-icons'
 
 function Menu() {
+  const handleShow = () => console.log("hola");
   return (
     <>
       <div className='header'>
@@ -26,7 +27,7 @@ function Menu() {
               className="d-inline-block align-top"
             /></Navbar.Brand>
             <Nav className="header-right">
-              <Nav.Link className='user'><a><FontAwesomeIcon icon={faUser} /><span>Iniciar sesión</span></a></Nav.Link>
+              <Nav.Link className='user' onClick={handleShow} ><a><FontAwesomeIcon icon={faUser} /><span>Iniciar sesión</span></a></Nav.Link>
               <Nav.Link className='anunciate'><a> <FontAwesomeIcon icon={faThumbtack} /><span>Pon tu anuncio gratis</span></a></Nav.Link>
             </Nav>
           </Container>

@@ -30,8 +30,7 @@ const Buscador = () => {
 
   return (
     <>
-      <br />
-      <center>
+      <div className='main'>
         <div role="img" className="imagenfondo">
           <section className="search-box">
             <h1>Tu casa, tu hogar</h1>
@@ -59,7 +58,7 @@ const Buscador = () => {
             </form>
           </section>
         </div>
-      </center>
+      </div>
     </>
   );
 };
