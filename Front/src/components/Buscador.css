@@ -1,3 +1,40 @@
 .imagenfondo {
     background-image: url(../assets/casafondo.jpg);
+    margin-left: 9%;
+    margin-right: -192%;
+    margin-top: -85%;
+    height: 241px;
+}
+
+.compra-button, .alquilar-button {
+    background-color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+form>div>* {
+    margin-top: 5px;
+}
+
+.input-field:focus {
+    outline: none;
+  }
+  
+
+.search-input{
+    border: 4px solid white;
+    display: flex;
+    width: fit-content;
+    border-radius: 14px;
+    background-color: white;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    background-color: white;
+    border: none;
 }
