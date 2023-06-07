@@ -1,58 +1,23 @@
-.anunciate {
-    border : solid 0.0625rem #E5E6E1;
-    border-radius: 17px;
-    padding-left: 10px;
-    padding-right: 10px;
 
+.header{
+    width: 100%;
 }
-
+.menu{
+    float: right;
+}
+.header-right {
+    float: right;
+}
 .anunciate:hover{
+    color: forestgreen;
+    border-color: forestgreen;
+    cursor: pointer;
+}
+.headerNavBar {
+    background-color:forestgreen
+}
+.user:hover {
     color: violet;
     border-color: violet;
     cursor: pointer;
 }
-
-.menu li {
-    box-sizing: border-box;
-    display: flex;
-    font-size: 1rem;
-    align-items: center;
-    line-height: 1.5rem;
-    overflow: hidden;
-    margin-top: 2px;
-    height: 25px;
-}
-
-.user{
-    height:3rem;
-    align-items: center;
-}
-
-.user:hover {
-    background-color: greenyellow;
-    cursor: pointer;
-}
-
-
-ul, li {
-    list-style-type: none;
-}
-
-ul{
-    display: inline-flex;
-}
-
-ul>.user{
-    padding-left: 5px;
-}
-
-a>svg{
-    padding-right: 7px;
-}
-
-li>a>span {
-    font-family: bernino-regular, Verdana, Arial, Geneva, sans-serif;
-    /* line-height: 24px; */
-    font-size: 13px;
-}
-
