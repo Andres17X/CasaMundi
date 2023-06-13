@@ -5,7 +5,11 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaSearch } from 'react-icons/fa';
 import Autosuggest from 'react-autosuggest';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import ToggleButton from 'react-bootstrap/ToggleButton';
+import Button from 'react-bootstrap/Button';
 
 
 const Buscador = () => {
@@ -27,35 +31,52 @@ const Buscador = () => {
       {item}
     </Dropdown.Item>
   ));
+  const [checked, setChecked] = useState(false);
+  const [radioValue, setRadioValue] = useState('1');
+
+  const radios = [
+    { name: 'Alquilar', value: '1' },
+    { name: 'Comprar', value: '2' },
+  ];
 
   return (
     <>
       <div className='main'>
-        <div role="img" className="imagenfondo">
-          <section className="search-box">
+      <div role="img" style={{height:'100%',display: 'flex' ,alignItems: 'center', justifyContent: 'center'}}>
+          <section className="search-box row">
+            <div className='title_search col-12'>
             <h1>Tu casa, tu hogar</h1>
-            <form>
-              <div>
-                <div>
-                  <label className="compra-button">Comprar</label>
-                  <label className="alquilar-button">Alquilar</label>
+            </div>
+              <div className='main_container d-flex justify-content-sm-center'>
+                <div style={{marginRight:'1%'}}>
+                <ButtonGroup>
+                  {radios.map((radio, idx) => (
+                    <ToggleButton
+                      key={idx}
+                      id={`radio-${idx}`}
+                      type="radio"
+                      variant={'outline-primary'}
+                      name="radio"
+                      value={radio.value}
+                      checked={radioValue === radio.value}
+                      onChange={(e) => setRadioValue(e.currentTarget.value)}
+                    >
+                      {radio.name}
+                    </ToggleButton>
+                  ))}
+                </ButtonGroup>
                 </div>
-                <DropdownButton id="dropdown-basic-button" title={selectedAction} onSelect={handleActionSelect}>
+                <DropdownButton style={{marginRight:'1%'}} id="dropdown-basic-button" title={selectedAction} onSelect={handleActionSelect}>
                   {renderDropdownItems.filter((item) => item.props.eventKey !== selectedAction)}
                 </DropdownButton>
-                <div className="search-input">
-                  <FontAwesomeIcon icon={faSearch} className="search-icon" />
-                  <input
-                    type="text"
-                    className="input-field"
-                    placeholder="Buscar..."
-                    value={searchValue}
-                    onChange={handleSearchInputChange}
-                    style={{ color: 'black' }}
-                  />
+                <div className="input-container" style={{marginRight:'1%'}}>
+                  <input type="text" className="input-field" />
+                  <FaSearch className="input-icon" />
+                </div>
+                <div>
+                <Button variant="success">Buscar</Button>{' '}
                 </div>
               </div>
-            </form>
           </section>
         </div>
       </div>
