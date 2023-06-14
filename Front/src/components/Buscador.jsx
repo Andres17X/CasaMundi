@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Buscador.css';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -10,7 +10,6 @@ import Autosuggest from 'react-autosuggest';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import Button from 'react-bootstrap/Button';
-
 
 const Buscador = () => {
   const dropdownItems = ['Viviendas', 'Terrenos', 'Oficinas'];
@@ -39,16 +38,36 @@ const Buscador = () => {
     { name: 'Comprar', value: '2' },
   ];
 
+  const handleSearchButton = () => {
+    fetch('https://localhost:7031/WeatherForecast', {
+        
+    }) 
+      .then((response) => response.json())
+      .then((data) => {
+        // Aquí puedes manejar los datos de la respuesta
+        console.log(data);
+      })
+      .catch((error) => {
+        // Aquí puedes manejar los errores de la petición
+        console.error(error);
+      });
+  };
+
+  
+
   return (
     <>
       <div className='main'>
-      <div role="img" style={{height:'100%',display: 'flex' ,alignItems: 'center', justifyContent: 'center'}}>
+        <div
+          role="img"
+          style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+        >
           <section className="search-box row">
             <div className='title_search col-12'>
-            <h1>Tu casa, tu hogar</h1>
+              <h1>Tu casa, tu hogar</h1>
             </div>
-              <div className='main_container d-flex justify-content-sm-center'>
-                <div style={{marginRight:'1%'}}>
+            <div className='main_container d-flex justify-content-sm-center'>
+              <div style={{ marginRight: '1%' }} >
                 <ButtonGroup>
                   {radios.map((radio, idx) => (
                     <ToggleButton
@@ -65,18 +84,18 @@ const Buscador = () => {
                     </ToggleButton>
                   ))}
                 </ButtonGroup>
-                </div>
-                <DropdownButton style={{marginRight:'1%'}} id="dropdown-basic-button" title={selectedAction} onSelect={handleActionSelect}>
-                  {renderDropdownItems.filter((item) => item.props.eventKey !== selectedAction)}
-                </DropdownButton>
-                <div className="input-container" style={{marginRight:'1%'}}>
-                  <input type="text" className="input-field" />
-                  <FaSearch className="input-icon" />
-                </div>
-                <div>
-                <Button variant="success">Buscar</Button>{' '}
-                </div>
               </div>
+              <DropdownButton  style={{ marginRight: '1%' }} id="dropdown-basic-button" title={selectedAction} onSelect={handleActionSelect}>
+                {renderDropdownItems.filter((item) => item.props.eventKey !== selectedAction)}
+              </DropdownButton>
+              <div style={{ marginRight: '1%' }}>
+                <input type="text" className="input-field" />
+                <FaSearch className="input-icon" />
+              </div>
+              <div>
+                <Button variant="success" onClick={handleSearchButton}>Buscar</Button>{' '}
+              </div>
+            </div>
           </section>
         </div>
       </div>
