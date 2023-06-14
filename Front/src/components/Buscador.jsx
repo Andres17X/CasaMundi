@@ -34,8 +34,8 @@ const Buscador = () => {
   const [radioValue, setRadioValue] = useState('1');
 
   const radios = [
-    { name: 'Alquilar', value: '1' },
-    { name: 'Comprar', value: '2' },
+    { name: 'Comprar', value: '1' },
+    { name: 'Alquilar', value: '2' },
   ];
 
   const handleSearchButton = () => {
@@ -88,9 +88,9 @@ const Buscador = () => {
               <DropdownButton  style={{ marginRight: '1%' }} id="dropdown-basic-button" title={selectedAction} onSelect={handleActionSelect}>
                 {renderDropdownItems.filter((item) => item.props.eventKey !== selectedAction)}
               </DropdownButton>
-              <div style={{ marginRight: '1%' }}>
+              <div className='input-container' style={{ marginRight: '1%' }}>
+              <FaSearch className="input-icon" />
                 <input type="text" className="input-field" />
-                <FaSearch className="input-icon" />
               </div>
               <div>
                 <Button variant="success" onClick={handleSearchButton}>Buscar</Button>{' '}

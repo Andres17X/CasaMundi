@@ -16,7 +16,7 @@ function Menu() {
   return (
     <>
       <div className='header'>
-        <Navbar bg="light" expand="lg" >
+        <Navbar bg="" expand="lg" >
           <Container style={{ minWidth: '100vw' }}>
             <Navbar.Brand >
             <img
