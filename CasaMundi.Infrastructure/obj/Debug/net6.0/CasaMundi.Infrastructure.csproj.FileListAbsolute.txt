@@ -1,0 +1,17 @@
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\bin\Debug\net6.0\CasaMundi.Infrastructure.deps.json
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\bin\Debug\net6.0\CasaMundi.Infrastructure.dll
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\bin\Debug\net6.0\CasaMundi.Infrastructure.pdb
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\bin\Debug\net6.0\CasaMundi.Application.dll
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\bin\Debug\net6.0\CasaMundi.Domain.dll
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\bin\Debug\net6.0\CasaMundi.Application.pdb
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\bin\Debug\net6.0\CasaMundi.Domain.pdb
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\CasaMundi.Infrastructure.csproj.AssemblyReference.cache
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\CasaMundi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\CasaMundi.Infrastructure.AssemblyInfoInputs.cache
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\CasaMundi.Infrastructure.AssemblyInfo.cs
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\CasaMundi.Infrastructure.csproj.CoreCompileInputs.cache
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\CasaMundi.Infrastructure.csproj.CopyComplete
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\CasaMundi.Infrastructure.dll
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\refint\CasaMundi.Infrastructure.dll
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\CasaMundi.Infrastructure.pdb
+E:\joser\Documentos\Project\CasaMundi\CasaMundi.Infrastructure\obj\Debug\net6.0\ref\CasaMundi.Infrastructure.dll
