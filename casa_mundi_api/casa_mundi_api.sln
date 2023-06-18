@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "casa_mundi_api", "casa_mundi_api.csproj", "{99937456-DD42-4541-82F8-6E51C19920A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "casa_mundi_api", "casa_mundi_api.csproj", "{99937456-DD42-4541-82F8-6E51C19920A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasaMundi.Domain", "..\CasaMundi.Domain\CasaMundi.Domain.csproj", "{6391AF3F-C640-43DD-900E-F69D3431277D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasaMundi.Application", "..\Application\CasaMundi.Application.csproj", "{99CA96F5-32B4-4066-ADFD-BE4375B59A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasaMundi.Infrastructure", "..\CasaMundi.Infrastructure\CasaMundi.Infrastructure.csproj", "{781C8BFD-0064-468C-AE1E-B81777B7547C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{99937456-DD42-4541-82F8-6E51C19920A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99937456-DD42-4541-82F8-6E51C19920A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99937456-DD42-4541-82F8-6E51C19920A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6391AF3F-C640-43DD-900E-F69D3431277D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6391AF3F-C640-43DD-900E-F69D3431277D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6391AF3F-C640-43DD-900E-F69D3431277D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6391AF3F-C640-43DD-900E-F69D3431277D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99CA96F5-32B4-4066-ADFD-BE4375B59A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CA96F5-32B4-4066-ADFD-BE4375B59A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CA96F5-32B4-4066-ADFD-BE4375B59A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CA96F5-32B4-4066-ADFD-BE4375B59A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781C8BFD-0064-468C-AE1E-B81777B7547C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781C8BFD-0064-468C-AE1E-B81777B7547C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781C8BFD-0064-468C-AE1E-B81777B7547C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781C8BFD-0064-468C-AE1E-B81777B7547C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

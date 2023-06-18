@@ -1,3 +1,7 @@
+using Application;
+using CasaMundi.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,15 +9,22 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
-                      policy =>
+               policy =>
                       {
-                          policy.WithOrigins("http://localhost:5173");
+                          policy.AllowAnyOrigin();
+                          policy.AllowAnyHeader();
+                          policy.AllowAnyMethod();
                       });
+  
 });
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<UsuarioDbContext>
+    (opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase")));
 
 // services.AddResponseCaching();
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
