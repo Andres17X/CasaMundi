@@ -16,5 +16,12 @@ namespace casa_mundi_api.Controllers
             Console.WriteLine("Hola");
 
         }
+        
+        [HttpGet("getViviendasVendidas")]
+        public void getViviendasVendidas()
+        {
+            Console.WriteLine("Hola");
+
+        }
     }
 }
